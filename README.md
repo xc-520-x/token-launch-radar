@@ -16,7 +16,7 @@ Every pre-token protocol, ranked by implied value. Built for the
   model and sorted by implied value.
 - **24 live-token protocols set aside** on their own tab, so the pre-token
   ranking is never diluted by tokens that already trade.
-- **A model that follows from the snapshot's own figures** (model "radar-2"):
+- **A model that follows from the snapshot's own figures** (model "radar-3"):
   each category's base multiple is the median mcap/TVL of that category's live
   tokens, winsorized at 3.0 and shrunk toward the global median with a prior of
   8 observations; then growth (7-day TVL change), maturity (age with no token),
@@ -27,7 +27,8 @@ Every pre-token protocol, ranked by implied value. Built for the
   cost and its time, with chain-aware gas and capital sized to the protocol's
   TVL.
 - **A static dashboard** (`dashboard/`) that renders with no network: sortable
-  table, search, category and chain filters, watchlist-only scope, pre-token /
+  table (implied-value bars are square-root scaled, so mid-ranked rows stay
+  visible), search, category and chain filters, watchlist-only scope, pre-token /
   live-token tabs, a detail view per protocol (model breakdown + farm plan),
   and a model panel showing the formula and the category calibration table.
 
